@@ -68,16 +68,16 @@ You can install Postman via this website: https://www.postman.com/downloads/
     -   [x] Commit: `Implement list_all_as_string function in Notification repository.`
     -   [x] Write answers of your learning module's "Reflection Subscriber-1" questions in this README.
 -   **STAGE 3: Implement services and controllers**
-    -   [ ] Commit: `Create Notification service struct skeleton.`
-    -   [ ] Commit: `Implement subscribe function in Notification service.`
-    -   [ ] Commit: `Implement subscribe function in Notification controller.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification service.`
-    -   [ ] Commit: `Implement unsubscribe function in Notification controller.`
-    -   [ ] Commit: `Implement receive_notification function in Notification service.`
-    -   [ ] Commit: `Implement receive function in Notification controller.`
-    -   [ ] Commit: `Implement list_messages function in Notification service.`
-    -   [ ] Commit: `Implement list function in Notification controller.`
-    -   [ ] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
+    -   [x] Commit: `Create Notification service struct skeleton.`
+    -   [x] Commit: `Implement subscribe function in Notification service.`
+    -   [x] Commit: `Implement subscribe function in Notification controller.`
+    -   [x] Commit: `Implement unsubscribe function in Notification service.`
+    -   [x] Commit: `Implement unsubscribe function in Notification controller.`
+    -   [x] Commit: `Implement receive_notification function in Notification service.`
+    -   [x] Commit: `Implement receive function in Notification controller.`
+    -   [x] Commit: `Implement list_messages function in Notification service.`
+    -   [x] Commit: `Implement list function in Notification controller.`
+    -   [x] Write answers of your learning module's "Reflection Subscriber-2" questions in this README.
 
 ## Your Reflections
 This is the place for you to write reflections:
@@ -97,3 +97,13 @@ secara bersamaan. lazy_static disini dipakai untuk mendapat static variabel yang
 terhadap multithreading sehingga tetap cocok pada program dengan model concurrency
 
 #### Reflection Subscriber-2
+
+1. Saya melakukan eksplorasi setelah mengikuti langkah-langkah tutorial. Setelah membaca beberapa referensi online,
+lib.rs berisi pendefinisian struktur modul serta elemen-elemen aplikasi lainnya. Sepert
+pada lib.rs terdapat pengelolaan error pada fungsi compose_error_response yang 
+digunakan untuk membuat error message kustom dengan status code tertentu
+2. Observer pattern memudahkan kita karena kita hanya perlu menambahkan instance
+subscriber bari ke dalam daftar observer. Observer baru ini nanti akan bereaksi terhadap proses update
+dari publisher secara otomatis
+3. Tentu, kita dapat berbagi koleksi yang telah dibuat kepada orang-orang lain
+sehingga mereka lebih memahami tentang API yang telah dibuat serta memudahkan proses testing
